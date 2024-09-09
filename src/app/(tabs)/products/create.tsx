@@ -1,16 +1,16 @@
-import Button from '@/components/button';
+import Button from '../../../components/button';
 import { Stack, useLocalSearchParams, useRouter } from 'expo-router'
 import { useEffect, useState } from 'react';
 import { Text, TextInput, View, Image, Pressable, Alert} from 'react-native'
 import { StyleSheet, ScrollView } from 'react-native'
 import * as ImagePicker from 'expo-image-picker';
-import {  useInsertProduct, useProduct, useUpdateProduct } from '@/api/products';
+import {  useInsertProduct, useProduct, useUpdateProduct } from '../../../api/products';
 import * as FileSystem from 'expo-file-system';
 import { randomUUID } from 'expo-crypto';
-import { supabase } from '@/lib/supabase';
+import { supabase } from '../../../lib/supabase';
 import { decode } from 'base64-arraybuffer';
-import { useAuth } from '@/providers/AuthProvider';
-import RemoteImage from '@/components/RemoteImage';
+import { useAuth } from '../../../providers/AuthProvider';
+import RemoteImage from '../../../components/RemoteImage';
 
 const CreateProductScreen = () =>{
     const tradeTypes : string[] = ['Sale', 'Jeonse', 'Rent'];

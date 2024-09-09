@@ -1,8 +1,8 @@
 import { Stack, Tabs,  } from "expo-router";
-import AuthProvider from "@/providers/AuthProvider";
+import AuthProvider from "../providers/AuthProvider";
 
 
-import QueryProvider from "@/providers/QueryProvider";
+import QueryProvider from "../providers/QueryProvider";
 export default function RootLayout() {
     
     return (

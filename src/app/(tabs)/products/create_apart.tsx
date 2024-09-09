@@ -1,5 +1,5 @@
-import Button from "@/components/button"
-import { supabase } from "@/lib/supabase"
+import Button from "../../../components/button"
+import { supabase } from '../../../lib/supabase';
 import { router, Stack } from "expo-router"
 import { useState } from "react"
 import { TextInput, View, StyleSheet, Alert } from "react-native"

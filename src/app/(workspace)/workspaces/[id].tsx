@@ -1,8 +1,8 @@
-import { useWorkspace } from "@/api/workspaces";
-import Button from "@/components/button";
-import RemoteImage from "@/components/RemoteImage";
-import { supabase } from "@/lib/supabase";
-import { useAuth } from "@/providers/AuthProvider";
+import { useWorkspace } from "../../../api/workspaces";
+import Button from "../../../components/button";
+import RemoteImage from "../../../components/RemoteImage";
+import { supabase } from "../../../lib/supabase";
+import { useAuth } from "../../../providers/AuthProvider";
 import { router, Stack, useLocalSearchParams } from "expo-router";
 import { ActivityIndicator, Alert, View, Text, ImageBackground, StyleSheet } from "react-native";
 

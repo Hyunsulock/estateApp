@@ -1,9 +1,9 @@
 import { Link, Redirect, router, Stack } from 'expo-router';
 import { StyleSheet, Text, View, Pressable, FlatList, ActivityIndicator, ImageBackground } from 'react-native';
 import React from 'react';
-import ProductItem from "@/components/productListItem";
-import { useProductList } from '@/api/products';
-import { useAuth } from '@/providers/AuthProvider';
+import ProductItem from "../../../components/productListItem";
+import { useProductList } from '../../../api/products';
+import { useAuth } from '../../../providers/AuthProvider';
 import Octicons from '@expo/vector-icons/Octicons';
 
 export default function Products() {

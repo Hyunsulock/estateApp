@@ -1,11 +1,11 @@
-import { supabase } from '@/lib/supabase';
+import { supabase } from '../../../lib/supabase';
 import { Slider } from '@miblanchard/react-native-slider';
 import { Link, router, Stack } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { ImageBackground, Pressable, ScrollView, Text, View, StyleSheet } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useQueryClient } from '@tanstack/react-query';
-import { useAuth } from '@/providers/AuthProvider';
+import { useAuth } from '../../../providers/AuthProvider';
 
 export default function User() {
     const tradeTypes: string[] = ['Sale', 'Jeonse', 'Rent'];

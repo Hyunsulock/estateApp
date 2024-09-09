@@ -1,11 +1,11 @@
 import { Link, router, Stack } from 'expo-router';
 import { ImageBackground, Pressable, Text, View, StyleSheet } from 'react-native';
-import { supabase } from '@/lib/supabase';
-import Button from '@/components/button';
+import { supabase } from '../../../lib/supabase';
+import Button from '../../../components/button';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { useAuth } from '@/providers/AuthProvider';
-import { useProfile } from '@/api/profile';
-import RemoteImage from '@/components/RemoteImage';
+import { useAuth } from '../../../providers/AuthProvider';
+import { useProfile } from '../../../api/profile';
+import RemoteImage from '../../../components/RemoteImage';
 
 export default function User() {
     const { session, loading, profile, setProfile, setChecking, setSession } = useAuth();

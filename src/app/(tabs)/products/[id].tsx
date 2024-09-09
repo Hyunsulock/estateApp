@@ -2,10 +2,10 @@ import { Link, router, Stack, useLocalSearchParams } from "expo-router";
 import { View, Text, Pressable, Alert, ScrollView, Linking, StyleSheet } from "react-native";
 import { useState } from "react";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { useDeleteProduct, useProduct, useUpdateProduct } from "@/api/products";
-import { useAuth } from "@/providers/AuthProvider";
-import { useUpdateProductSubscription } from "@/api/products/subscriptions";
-import RemoteImage from "@/components/RemoteImage";
+import { useDeleteProduct, useProduct, useUpdateProduct } from "../../../api/products";
+import { useAuth } from "../../../providers/AuthProvider";
+import { useUpdateProductSubscription } from "../../../api/products/subscriptions";
+import RemoteImage from "../../../components/RemoteImage";
 
 const ProductDetailsScreen = () => {
     const { mutate: deleteProduct } = useDeleteProduct();

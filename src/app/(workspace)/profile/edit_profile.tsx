@@ -1,7 +1,7 @@
-import { useProfile, useUpdateProfile } from "@/api/profile";
-import Button from "@/components/button";
-import { supabase } from "@/lib/supabase";
-import { useAuth } from "@/providers/AuthProvider";
+import { useProfile, useUpdateProfile } from "../../../api/profile";
+import Button from "../../../components/button";
+import { supabase } from "../../../lib/supabase";
+import { useAuth } from "../../../providers/AuthProvider";
 import { router, Stack } from "expo-router";
 import { useEffect, useState } from "react";
 import { TextInput, View, StyleSheet, Alert, Text, ScrollView, ImageBackground } from "react-native";
@@ -9,7 +9,7 @@ import { decode } from 'base64-arraybuffer';
 import * as FileSystem from 'expo-file-system';
 import { randomUUID } from 'expo-crypto';
 import * as ImagePicker from 'expo-image-picker';
-import RemoteImage from "@/components/RemoteImage";
+import RemoteImage from "../../../components/RemoteImage";
 
 const EditProfileScreen = () => {
     const defalutImageUri = "https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg";

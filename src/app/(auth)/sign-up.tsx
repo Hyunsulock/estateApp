@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Button from '../../components/button';
 
 import { Link, Stack } from 'expo-router';
-import { supabase } from '@/lib/supabase';
+import { supabase } from '../../lib/supabase';
 
 const SignUpScreen = () => {
   const [email, setEmail] = useState('');
