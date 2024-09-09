@@ -1,5 +1,5 @@
 
-import { useAuth } from '@/providers/AuthProvider'
+import { useAuth } from '../providers/AuthProvider'
 import {Link , Redirect} from 'expo-router'
 import { ActivityIndicator, Text, View} from 'react-native'
 export default function Home() {
